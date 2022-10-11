@@ -1,11 +1,23 @@
-import React from 'react';
-
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Topic from "../Topic/Topic";
+import "./Topics.css";
 const Topics = () => {
-    return (
-        <div>
-            <h2>This is topics</h2>
+  const loaderData = useLoaderData();
+  const topicsData = loaderData.data;
+  console.log(topicsData);
+
+  return (
+    <div className="container">
+      <div className="row row-cols-md-2">
+        <div className="col">
+          {topicsData.map((topic) => (
+            <Topic key={topic.id} topic={topic}></Topic>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Topics;

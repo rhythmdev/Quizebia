@@ -4,11 +4,13 @@ import Root from "./components/Root/Root";
 import Topics from "./components/Topics/Topics";
 import Blog from "./components/Blog/Blog";
 import Statistics from "./components/Statistics/Statistics";
+import Errorpage from "./components/ErrorPage/Errorpage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <Errorpage/>,
     children: [
       {
         path: "/",
@@ -17,6 +19,7 @@ export const router = createBrowserRouter([
       {
         path: "topics",
         element: <Topics />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
       },
       {
         path: "statistics",
