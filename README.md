@@ -1,7 +1,7 @@
 # Project : Quizbia App
 
 ## Live Link
-
+**https://quizebia.netlify.app/**
 ### Project Descriptions
 
 - **This project is for Web developer who can test him/her skill by playing quiz.**
