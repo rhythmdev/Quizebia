@@ -13,13 +13,13 @@ import {
 
 const Statistics = () => {
   const data = useLoaderData().data;
-  console.log(data);
+  // console.log(data);
 
   let names = data.map((name) => name);
   console.log(names);
 
   return (
-    <ResponsiveContainer width="95%" height={400}>
+    <ResponsiveContainer width="95%" height={400} >
       <LineChart
         width={500}
         height={300}

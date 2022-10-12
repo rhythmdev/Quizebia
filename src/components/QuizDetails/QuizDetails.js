@@ -19,7 +19,7 @@ const QuizDetails = ({ quiz }) => {
 
           <div>
             {
-                  options.map((option)=>  <Option key={option.id} option={option}></Option>
+                  options.map((option)=>  <Option key={option.id} option={option} quiz={quiz}></Option>
                    
                  
                   
