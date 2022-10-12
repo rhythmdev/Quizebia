@@ -18,10 +18,10 @@ const Option = ({ option, quiz }) => {
     <div>
       <div className="container mt-3">
         <div className="border rounded py-3 bg-secondary text-white">
-          <label for="html">
+          <label for={option}>
             <input onClick={()=> clickQuiz(option) }
               type="radio"
-              id="html"
+              id={option}
               name="fav_language"
               value={option}
             ></input>

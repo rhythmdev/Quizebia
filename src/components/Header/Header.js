@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light shadow">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/">
           <span className="logo">Quizbia</span>
-        </Link>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,33 +22,57 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link
-                className="nav-link fw-semibold"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link fw-semibold text-primary"
+                    : " nav-link fw-semibold"
+                }
                 aria-current="page"
                 to="/home"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link fw-semibold"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link fw-semibold text-primary"
+                    : " nav-link fw-semibold"
+                }
                 aria-current="page"
                 to="/topics"
               >
                 Topics
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link fw-semibold" to="/statistics">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link fw-semibold text-primary"
+                    : " nav-link fw-semibold"
+                }
+                aria-current="page"
+                to="/statistics"
+              >
                 Statistics
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link fw-semibold" to="/blog">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link fw-semibold text-primary"
+                    : " nav-link fw-semibold"
+                }
+                aria-current="page"
+                to="/blog"
+              >
                 Blog
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
