@@ -1,3 +1,13 @@
+# Project : Quizbia App
+
+## Live Link
+
+### Project Descriptions
+
+- **This project is for Web developer who can test him/her skill by playing quiz.**
+- **I build this website by using modern technology.**
+- **I use Html5, Css3, Bootstrap 5, React, React Router, Hero icons, React-Toastify, Rechart etc.**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # b6-quiz-crackerz-rhythmdev
