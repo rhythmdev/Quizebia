@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Topic.css";
 
 const Topic = ({ topic }) => {
-  const { name, logo, total } = topic;
+  const {id, name, logo, total } = topic;
   return (
     <div className="container">
       {/* <div className="product">
@@ -34,7 +36,7 @@ const Topic = ({ topic }) => {
         <p className="card-text"> Total: {total}</p>
       </div>
       <div className="card-footer">
-       <button className="btn btn-primary">Start Quiz</button>
+      <Link to={`../topic/${id}`}><button className="btn btn-primary">Start Quiz</button></Link>
       </div>
     </div>
      
@@ -43,3 +45,4 @@ const Topic = ({ topic }) => {
 };
 
 export default Topic;
+// onClick={<Link to={`../topic/${id}`}></Link>}

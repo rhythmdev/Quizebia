@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import reader from "../assests/reader.json";
 import "./Home.css";
+
 const Home = () => {
   return (
     <div className="container mt-5">
@@ -18,6 +19,7 @@ const Home = () => {
           <Lottie animationData={reader} loop={true}></Lottie>
         </div>
       </div>
+      
     </div>
   );
 };
