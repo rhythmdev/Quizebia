@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", serif;
-  
 }
 .product {
   position: absolute;
@@ -91,4 +90,30 @@ ul.colors li {
   width: 100%;
   font-size: 13px;
   border-radius: 2px;
+}
+
+.card-container {
+  background-color: #ccc;
+  max-width: 350px;
+  background-color: #FAF9F6;
+  color: #7863FC;
+  border-radius: 10px;
+}
+.card-container img {
+  width: 250px;
+  height: 250px;
+  background-color: #a7c7e7;
+  border-radius: 10px;
+}
+.star-quiz-btn{
+  background-color: #7863FC;
+    color: aliceblue;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 2rem;
+}
+.right-arrow{
+  width: 20px;
+  height: 20px;
 }

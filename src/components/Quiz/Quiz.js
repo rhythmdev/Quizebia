@@ -13,7 +13,7 @@ const Quiz = () => {
 // finalQuestion = finalQuestion.substring(3, lastIndex);
     return (
         <div>
-            <h2>Quiz of {quizData.name}</h2>
+            <h2 className='my-5'>Quiz of {quizData.name}</h2>
            
            {
             quizData.questions.map((quiz) => (
