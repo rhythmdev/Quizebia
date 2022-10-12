@@ -13,8 +13,8 @@ const Quiz = () => {
 // finalQuestion = finalQuestion.substring(3, lastIndex);
     return (
         <div>
-            <h2>This is quiz: {quizData.name}</h2>
-          
+            <h2>Quiz of {quizData.name}</h2>
+           
            {
             quizData.questions.map((quiz) => (
               <QuizDetails key={quiz.id} quiz={quiz}></QuizDetails>
