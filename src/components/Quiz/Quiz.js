@@ -7,10 +7,8 @@ const Quiz = () => {
     // console.log(loadQuizData)
     const quizData = loadQuizData.data;
     
-     console.log(quizData)
-//      let finalQuestion = question;
-// const lastIndex = finalQuestion.lastIndexOf("</p>");
-// finalQuestion = finalQuestion.substring(3, lastIndex);
+     
+
     return (
         <div>
             <h2 className='my-5'>Quiz of {quizData.name}</h2>
