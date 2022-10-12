@@ -8,7 +8,7 @@ const QuizDetails = ({ quiz }) => {
   const { question, options } = quiz;
 
   const showAns = (ans) => {
-    toast(quiz.correctAnswer);
+    toast(quiz.correctAnswer,  {autoClose: 1000})
   };
   return (
     <div>

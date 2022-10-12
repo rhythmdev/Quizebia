@@ -25,11 +25,21 @@ const Header = () => {
               <Link
                 className="nav-link fw-semibold"
                 aria-current="page"
+                to="/home"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link fw-semibold"
+                aria-current="page"
                 to="/topics"
               >
                 Topics
               </Link>
             </li>
+
             <li className="nav-item">
               <Link className="nav-link fw-semibold" to="/statistics">
                 Statistics
