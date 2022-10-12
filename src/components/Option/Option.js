@@ -6,10 +6,10 @@ const Option = ({ option, quiz }) => {
 
   const clickQuiz= (result) =>{
    if(result === quiz.correctAnswer){
-    console.log('right')
+    toast.success('Yeah!!! Right Answer', {autoClose: 500})
    }
    else{
-    console.log('wrong')
+    toast.warning('Oops!!! Wrong Answer', {autoClose: 500})
    }
   }
    
